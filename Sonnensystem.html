@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            overflow: hidden;
+            background-image: url('all.jpeg');
+            background-size: cover;
+        }
+        .container {
+            font-size: 10px;
+            width: 80em;
+            height: 80em;
+            position: relative;
+        }
+        .sonne {
+            width: 100px;
+            height: 100px;
+            background-image: url('image/Sonne.png');
+            background-size: cover;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .planet, .mond {
+            position: absolute;
+            border-style: solid;
+            border-color: white transparent transparent transparent;
+            border-width: 0.1em 0.1em 0 0;
+            border-radius: 50%;
+        }
+        .planet::before, .mond::before {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+        }
+        @keyframes orbit {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Merkur */
+        .merkur {
+            top: 30em;
+            left: 30em;
+            width: 20em;
+            height: 20em;
+            animation: orbit 8.8s linear infinite;
+        }
+        .merkur::before {
+            top: 2em;
+            right: 2em;
+            width: 1.5em;
+            height: 1.5em;
+            background-color: #8c7e6d;
+        }
+
+        /* Venus */
+        .venus {
+            top: 27.5em;
+            left: 27.5em;
+            width: 25em;
+            height: 25em;
+            animation: orbit 22.5s linear infinite;
+        }
+        .venus::before {
+            top: 2.3em;
+            right: 2.3em;
+            width: 2.5em;
+            height: 2.5em;
+            background-color: #e6e2d3;
+        }
+        .erde {
+            top: 25em;
+            left: 25em;
+            width: 30em;
+            height: 30em;
+            animation: orbit 36.5s linear infinite;
+        }
+        .erde::before {
+            top: 2.8em;
+            right: 2.8em;
+            width: 3em;
+            height: 3em;
+            background-color: aqua;
+            
+        }
+        .mond {
+            top: 0;
+            right: 0;
+            width: 8em;
+            height: 8em;
+            animation: orbit 2.7s linear infinite;
+        }
+        .mond::before {
+            top: 0.5em;
+            right: 0.5em;
+            width: 1.2em;
+            height: 1.2em;
+            background-color: silver;
+        }
+        .mars {
+            top: 22.5em;
+            left: 22.5em;
+            width: 35em;
+            height: 35em;
+            animation: orbit 68.7s linear infinite;
+        }
+        .mars::before {
+            top: 4em;
+            right: 4em;
+            width: 2em;
+            height: 2em;
+            background-color: #c1440e;
+        }
+        .jupiter {
+            top: 20em;
+            left: 20em;
+            width: 40em;
+            height: 40em;
+            animation: orbit 178.8s linear infinite;
+        }
+        .jupiter::before {
+            top: 3.5em;
+            right: 3.5em;
+            width: 4em;
+            height: 4em;
+            background-color: #e3dccb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sonne"></div>
+        <div class="planet merkur"></div>
+        <div class="planet venus"></div>
+        <div class="planet erde">
+            <div class="mond"></div>
+        </div>
+        <div class="planet mars"></div>
+        <div class="planet jupiter"></div>
+    </div>
+</body>
+</html>
