@@ -10,7 +10,7 @@
             justify-content: center;
             background-color: black;
             overflow: hidden;
-            background-image: url('all.jpeg');
+            background-image: url('image/Weltall.jpg');
             background-size: cover;
         }
         .container {
@@ -47,8 +47,6 @@
                 transform: rotate(360deg);
             }
         }
-
-        /* Merkur */
         .merkur {
             top: 30em;
             left: 30em;
@@ -57,14 +55,13 @@
             animation: orbit 8.8s linear infinite;
         }
         .merkur::before {
-            top: 2em;
-            right: 2em;
+            top: 2.2em;
+            right: 2.2em;
             width: 1.5em;
             height: 1.5em;
-            background-color: #8c7e6d;
+            background-image: url('image/Merkur.png');
+            background-size: cover;
         }
-
-        /* Venus */
         .venus {
             top: 27.5em;
             left: 27.5em;
@@ -73,11 +70,12 @@
             animation: orbit 22.5s linear infinite;
         }
         .venus::before {
-            top: 2.3em;
-            right: 2.3em;
+            top: 2.5em;
+            right: 2.5em;
             width: 2.5em;
             height: 2.5em;
-            background-color: #e6e2d3;
+            background-image: url('image/Venus.png');
+            background-size: cover;
         }
         .erde {
             top: 25em;
@@ -91,8 +89,8 @@
             right: 2.8em;
             width: 3em;
             height: 3em;
-            background-color: aqua;
-            
+            background-image: url('image/Erde.png'); 
+            background-size: cover;    
         }
         .mond {
             top: 0;
@@ -106,7 +104,8 @@
             right: 0.5em;
             width: 1.2em;
             height: 1.2em;
-            background-color: silver;
+            background-image: url('image/Mond.png');
+            background-size: cover;
         }
         .mars {
             top: 22.5em;
@@ -120,7 +119,8 @@
             right: 4em;
             width: 2em;
             height: 2em;
-            background-color: #c1440e;
+            background-image: url('image/Mars.png');
+            background-size: cover;
         }
         .jupiter {
             top: 20em;
@@ -130,11 +130,58 @@
             animation: orbit 178.8s linear infinite;
         }
         .jupiter::before {
-            top: 3.5em;
-            right: 3.5em;
+            top: 20em;
+            right: 20em;
             width: 4em;
             height: 4em;
-            background-color: #e3dccb;
+            background-image: url('image/Jupiter.png');
+            background-size: cover;
+        }
+        .saturn {
+            top: 17.5em;
+            left: 17.5em;
+            width: 45em;
+            height: 45em;
+            animation: orbit 378.1s linear infinite;
+        }
+        .saturn::before {
+            top: 4.3em;
+            right: 4.3em;
+            width: 4.5em;
+            height: 4.5em;
+            background-image: url('image/Saturn.png');
+            background-size: cover;
+        }
+
+        .uranus {
+            top: 15em;
+            left: 15em;
+            width: 50em;
+            height: 50em;
+            animation: orbit 840.2s linear infinite;
+        }
+        .uranus::before {
+            top: 5.5em;
+            right: 5.5em;
+            width: 3.5em;
+            height: 3.5em;
+            background-image: url('image/Uranus.png');
+            background-size: cover;
+        }
+        .neptun {
+            top: 12.5em;
+            left: 12.5em;
+            width: 55em;
+            height: 55em;
+            animation: orbit 1647.8s linear infinite;
+        }
+        .neptun::before {
+            top: 6.45em;
+            right: 6.45em;
+            width: 3.5em;
+            height: 3.5em;
+            background-image: url('image/Neptun.png');
+            background-size: cover;
         }
     </style>
 </head>
@@ -147,7 +194,9 @@
             <div class="mond"></div>
         </div>
         <div class="planet mars"></div>
-        <div class="planet jupiter"></div>
+        <div class="planet saturn"></div>
+        <div class="planet uranus"></div>
+        <div class="planet neptun"></div>
     </div>
 </body>
 </html>
