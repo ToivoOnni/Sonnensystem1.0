@@ -43,7 +43,7 @@ body {
       transform: rotate(360deg);
   }
 }
-/* Merkur */
+
 .merkur {
   top: 30em;
   left: 30em;
@@ -59,7 +59,7 @@ body {
   background-image: url('image/Merkur.png');
   background-size: cover;
 }
-/* Venus */
+
 .venus {
   top: 27.5em;
   left: 27.5em;
@@ -75,7 +75,6 @@ body {
   background-image: url('image/Venus.png');
   background-size: cover;
 }
-/* Erde */
 .erde {
   top: 25em;
   left: 25em;
@@ -91,7 +90,7 @@ body {
   background-image: url('image/Erde.png'); 
   background-size: cover;    
 }
-/* Mond */
+
 .mond {
   top: 0;
   right: 0;
@@ -107,7 +106,7 @@ body {
   background-image: url('image/Mond.png');
   background-size: cover;
 }
-/* Mars */
+
 .mars {
   top: 22.5em;
   left: 22.5em;
@@ -123,7 +122,7 @@ body {
   background-image: url('image/Mars.png');
   background-size: cover;
 }
-/* Jupiter */
+
 .jupiter {
   top: 20em;
   left: 20em;
@@ -139,7 +138,7 @@ body {
   background-image: url('image/Jupiter.png');
   background-size: cover;
 }
-/* Saturn */
+
 .saturn {
   top: 17.5em;
   left: 17.5em;
@@ -156,7 +155,7 @@ body {
   background-size: cover;
 }
 
-/* Uranus */
+
 .uranus {
   top: 15em;
   left: 15em;
@@ -172,7 +171,7 @@ body {
   background-image: url('image/Uranus.png');
   background-size: cover;
 }
-/* Neptun */
+
 .neptun {
   top: 12.5em;
   left: 12.5em;
